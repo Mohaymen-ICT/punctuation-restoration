@@ -8,7 +8,6 @@ class DeepPunctuation(nn.Module):
     def __init__(self, pretrained_model, freeze_bert=False, lstm_dim=-1):
         super(DeepPunctuation, self).__init__()
         self.output_dim = len(punctuation_dict)
-       # self.bert_layer = MODELS[pretrained_model][0].from_pretrained('/home/ubuntu/.cache/huggingface/hub/models--HooshvareLab--bert-base-parsbert-uncased/snapshots/d73a0e2c7492c33bd5819bcdb23eba207404dd19') #pretrained_model
         self.bert_layer = MODELS[pretrained_model][0].from_pretrained(pretrained_model)
 
 
