@@ -9,6 +9,8 @@ class DeepPunctuation(nn.Module):
         super(DeepPunctuation, self).__init__()
         self.output_dim = len(punctuation_dict)
         self.bert_layer = MODELS[pretrained_model][0].from_pretrained(pretrained_model)
+
+
         # Freeze bert layers
         if freeze_bert:
             for p in self.bert_layer.parameters():
