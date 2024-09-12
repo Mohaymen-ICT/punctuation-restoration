@@ -4,6 +4,8 @@ This repository contins official implementation of the paper [*Punctuation Resto
 
 
 ## Data
+#### Persian
+Sample Persian dataset will be added soon!
 
 #### English
 English datasets are provided in `data/en` directory. These are collected from [here](https://drive.google.com/file/d/0B13Cc1a7ebTuMElFWGlYcUlVZ0k/view).
